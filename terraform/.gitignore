@@ -4,6 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+add main IDE
 
 # Crash log files
 crash.log
