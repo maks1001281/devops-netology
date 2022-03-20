@@ -1,44 +1,14 @@
-# devops-netology
-#maks1001280388
-#maks uchitsa rabotati s GIT
-#y maksa polychaetsa
-#vrode rabotaet
+8: Длинна задается переменной        HISTFILESIZE, нашел через grep по history
+8.1: ignoreboth — не записывать команду, которая начинается с пробела, либо команду, которая дублирует предыдущую.
 
+9: {} - зарезервированные слова, используется в циклах, условных операторах
 
+10: touch maks{1..100000}.txt , 300000 аргументов создать не удастся, говорит слишком большой список аргументов
+ 
+11: [[ -d /tmp ]]  -d  истинно если файл существует и является директорией, те мы проверяем  /tpm если он существует и если это директория то значение истина 
 
-# Local .terraform directories
-**/.terraform/*
-Как я понял будут игнорироваться файлы в дерииктории terraform
+12: PATH=/tmp/new_path_directory:$PATH
 
-# .tfstate files
-*.tfstate     что угодго и .tfstate
-*.tfstate.*    что угодго и .tfstate. что угодго
+13: at используется для назначения одноразового задания на заданное время, а команда batch когда загрузка системы становится меньше 0,8
 
-# Crash log files
-crash.log     crash.log  
-crash.*.log   crash.что угодно.log
-
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version
-# control as they are data points which are potentially sensitive and subject
-# to change depending on the environment.
-*.tfvars         что угодно.tfvars
-*.tfvars.json    что угодно.tfvars.json
-
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf           override.tf
-override.tf.json      override.tf.json
-*_override.tf         что угодно*_override.tf
-*_override.tf.json    что угодно_override.tf.json
-
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
-
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
-.terraformrc      игнорирование файлов с расширением .terraformrc
-terraform.rc      игнорирование файла terraform.rc
 
