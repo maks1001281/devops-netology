@@ -1,0 +1,16 @@
+#!/bin/bash
+# display command line options
+
+#!/bin/bash
+# display command line options
+
+count=1
+<<<<<<< HEAD
+for param in "$*"; do
+    echo "\$* Next parameter #$count = $param"
+=======
+for param in "$@"; do
+    echo "Next parameter: $para
+    count=$(( $count + 1 ))
+done
+echo "====="
