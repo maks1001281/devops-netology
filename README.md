@@ -1,49 +1,27 @@
-1. strace /bin/bash -c 'cd /tmp' 2>&1&>log.txt перенаправим вывод в файл
-cat log.txt | grep /tmp решил посмотреть grep что есть в файле на счет tmp,
-погуглив нашел что вызов chdir("/tmp") изменяет рабочий каталог
-execve("/bin/bash", ["/bin/bash", "-c", "cd /tmp"], 0x7ffe12a23530 /* 21 vars */) = 0
-stat("/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0
-chdir("/tmp")                           = 0
-2. Openat   открытие /etc/magic.mgc
-3. Например можно запустить strace c ключем -p что бы сделать траблшут уже на рабочем процессе и понять куда пишется этот лог что бы самостоятельно удалить его или почистить, или можно попробовать перенаправить данные из файла log в файл dlog, что то типа /log >> /dlog
-4. Wiki говорит что не занимает: Процесс при завершении (как нормальном, так и в результате не обрабатываемого сигнала) освобождает все свои ресурсы и становится «зомби» — пустой записью в таблице процессов, хранящей статус завершения, предназначенный для чтения родительским процессом.
-Но на некоторых форумах пишут что если таких процессов слишком много они могут уже приводит к проблемам, кому верить не знаю.
-5. При запуске ./opensnoop-bpfcc получаю ошибку
-sh: 1: modprobe: not found
-Unable to find kernel headers. Try rebuilding kernel with CONFIG_IKHEADERS=m (module) or installing the kernel development package for your running kernel version.
-chdir(/lib/modules/5.10.0-11-amd64/build): No such file or directory
-Traceback (most recent call last):
-  File "/usr/sbin/./opensnoop-bpfcc", line 261, in <module>
-    b = BPF(text='')
-  File "/usr/lib/python3/dist-packages/bcc/__init__.py", line 364, in __init__
-    raise Exception("Failed to compile BPF module %s" % (src_file or "<text>"))
-Exception: Failed to compile BPF module <text>
-6. uname (1)            - print system information 
-Выел man в txt и сделал cat man.txt | grep -i version
-These files give substrings of /proc/version.
-              meaning that every possible SysRq request is allowed (in older kernel versions, SysRq was disabled  by  de‐
-       /proc/sys/kernel/version
-                  Timer Stats Version: v0.3
-       /proc/version
-              This string identifies the kernel  version  that  is  currently  running.   It  includes  the  contents  of
-              /proc/sys/kernel/ostype, /proc/sys/kernel/osrelease, and /proc/sys/kernel/version.
-cat /proc/version
-Linux version 5.10.0-11-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.92-2 (2022-02-28)
-7. [Точка-с-запятой] Позволяет записывать две и более команд в одной строке.
-&& является логическим «И» и выполнит вторую часть оператора только в том случае, если первая часть верна
- ключ -e значит Выйти немедленно, если команда завершается с ненулевым статусом, смысл использовать && есть тк если  будет нулевой результат то выполнение продолжится 
-8. -e Немедленный выход, если команда завершается с ненулевым статусом.
--u прекращает выполнение скрипта, если встретилась несуществующая переменная
--x Печатать команды и их аргументы по мере их выполнения.
--o имя-опции
-Его хорошо бы было использовать в сценариях потому что если скрипт совершится с ошибкой то мы все увидим на экране, и будет видно на каком этапе ошибка выполнения 
-9. ps -o stat
-STAT
-Ss
-R+
-S    interruptible sleep (waiting for an event to complete)
-s    is a session leader
-R    running or runnable (on run queue)
-+    is in the foreground process group
-
+1.В автозагрузку поместил, за это отвечает опция WantedBy=multi-user.target в блоке [install],
+предусмотрите возможность добавления опций к запускаемому процессу через внешний файл: это как? Я и так создай node_exporter.service, служба корректно стартует, перезапускается, останавливается.
+2.	 --collector.filesystem
+--collector.meminfo 
+--collector.cpu
+--collector.netdev
+Я бы выбрал эти но они и так по умолчанию включены 
+3. Установил, приятный веб интерфейс с множеством полезных метрик
+4. Можно это понять:
+[    0.000000] Hypervisor detected: Microsoft Hyper-V
+[    0.000000] clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.042782] SRBDS: Unknown: Dependent on hypervisor status
+[    0.164107] clocksource: Switched to clocksource hyperv_clocksource_tsc_page
+[    0.788610] hv_vmbus: registering driver hid_hyperv
+[    2.426157] hv_vmbus: registering driver hyperv_fb
+[    2.426464] hyperv_fb: Synthvid Version major 3, minor 5
+[    2.426491] hyperv_fb: Screen resolution: 1024x768, Color depth: 32
+[    2.426493] hyperv_fb: Unable to allocate enough contiguous physical memory on Gen 1 VM. Using MMIO instead.
+[    2.428396] hv_vmbus: registering driver hyperv_keyboard
+[    2.431115] hv_utils: Registering HyperV Utility Driver
+5. Максимальное значение дескрипторов 1048576, Ulimit ограничивает ресурсы на текущую сессию, Ulimit -n наприер 2048
+6. 
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   5304   572 pts/4    S+   08:53   0:00 sleep 1h
+7. Эта команда является логической бомбой. Она оперирует определением функции с именем ‘:‘, которая вызывает сама себя дважды: один раз на переднем плане и один раз в фоне. Она продолжает своё выполнение снова и снова, пока система не зависнет.
+Никакой стабилизации не произошло, при вводе любой команды выдавало bash: fork: retry: Resource temporarily unavailable
 
