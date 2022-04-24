@@ -1,75 +1,40 @@
-1. Почему то сразу в голову приходит дефрагментация диска
-2. Нет не могут, жесткая ссылка это ссылка на кусок файловой системы имеющий такие же права как и сам файл.
-3. Добавил 2 диска в виртуальную машину с помощью HyperV
-4. sdb      8:16   0    3G  0 disk
-├─sdb1   8:17   0  500M  0 part
-└─sdb2   8:18   0  500M  0 part
-5.  sudo sfdisk -d /dev/sdb > sdb.txt 
-      sudo sfdisk /dev/sdc < sdb.txt
-lsblk :
-sdb      8:16   0    3G  0 disk
-├─sdb1   8:17   0  500M  0 part
-└─sdb2   8:18   0  500M  0 part
-sdc      8:32   0    3G  0 disk
-├─sdc1   8:33   0  500M  0 part
-└─sdc2   8:34   0  500M  0 part
-6. sudo mdadm --create  /dev/md1 -l 1 --raid-devices=2 /dev/sdb3 /dev/sdc3
-sdb       8:16   0    3G  0 disk
-├─sdb1    8:17   0  500M  0 part
-├─sdb2    8:18   0  500M  0 part
-└─sdb3    8:19   0    2G  0 part
-  └─md1   9:1    0    2G  0 raid1
-sdc       8:32   0    3G  0 disk
-├─sdc1    8:33   0  500M  0 part
-├─sdc2    8:34   0  500M  0 part
-└─sdc3    8:35   0    2G  0 part
-  └─md1   9:1    0    2G  0 raid1
-7. sudo mdadm --create  /dev/md0 -l 0 --raid-devices=4 /dev/sdb{1,2} /dev/sdc{1,2}
-sdb       8:16   0    3G  0 disk
-├─sdb1    8:17   0  500M  0 part
-│ └─md0   9:0    0  1.9G  0 raid0
-├─sdb2    8:18   0  500M  0 part
-│ └─md0   9:0    0  1.9G  0 raid0
-└─sdb3    8:19   0    2G  0 part
-  └─md1   9:1    0    2G  0 raid1
-sdc       8:32   0    3G  0 disk
-├─sdc1    8:33   0  500M  0 part
-│ └─md0   9:0    0  1.9G  0 raid0
-├─sdc2    8:34   0  500M  0 part
-│ └─md0   9:0    0  1.9G  0 raid0
-└─sdc3    8:35   0    2G  0 part
-  └─md1   9:1    0    2G  0 raid1
-sr0      11:0    1 1024M  0 rom
-8. sudo pvcreate /dev/md0 sudo pvcreate /dev/md1
-9. sudo vgcreate md1+md0 /dev/md1 /dev/md0
-10.  sudo lvcreate -L 100M -n md100M0 md1+md0 /dev/md0
-11. sudo mkfs.ext4 /dev/md1+md0/md100M0
-12. sudo mount /dev/md1+md0/md100M0 /tmp/100m
-13. Скачал
-14. 
-sdb                     8:16   0    3G  0 disk
-├─sdb1                  8:17   0  500M  0 part
-│ └─md0                 9:0    0  1.9G  0 raid0
-│   └─md1+md0-md100M0 253:0    0  100M  0 lvm   /tmp/100m
-├─sdb2                  8:18   0  500M  0 part
-│ └─md0                 9:0    0  1.9G  0 raid0
-│   └─md1+md0-md100M0 253:0    0  100M  0 lvm   /tmp/100m
-└─sdb3                  8:19   0    2G  0 part
-  └─md1                 9:1    0    2G  0 raid1
-sdc                     8:32   0    3G  0 disk
-├─sdc1                  8:33   0  500M  0 part
-│ └─md0                 9:0    0  1.9G  0 raid0
-│   └─md1+md0-md100M0 253:0    0  100M  0 lvm   /tmp/100m
-├─sdc2                  8:34   0  500M  0 part
-│ └─md0                 9:0    0  1.9G  0 raid0
-│   └─md1+md0-md100M0 253:0    0  100M  0 lvm   /tmp/100m
-└─sdc3                  8:35   0    2G  0 part
-  └─md1                 9:1    0    2G  0 raid1
-15. Протестировал, файл на месте
-16.  sudo pvmove /dev/md0 /dev/md1
-17 . sudo mdadm /dev/md1 --fail /dev/sdb3
-18. [10429.232296] md/raid1:md1: Disk failure on sdb3, disabling device.
-               md/raid1:md1: Operation continuing on 1 devices.
-19. Файл доступен
-20. У меня всегда сервера работают
+1.  301 Moved Permanently — запрошенный документ был окончательно перенесен на новый URI, указанный в поле Location заголовка. Некоторые клиенты некорректно ведут себя при обработке данного кода. Появился в HTTP/1.0.
+2.  200 OK — успешный запрос. Больше всего обрабатывается запрос GET (смотеть файл Home work.png)
+3.  Не скажу)
+4.  descr:          Novotelecom Ltd.
+      origin:         AS31200
+5. 
+1  _gateway (192.168.1.1)  0.395 ms  0.377 ms  0.559 ms
+ 2  l37-192-231-254.novotelecom.ru (37.192.231.254)  1.182 ms  1.047 ms  1.118 ms
+ 3  10.245.138.241 (10.245.138.241)  1.199 ms  1.272 ms  1.308 ms
+ 4  10.245.138.242 (10.245.138.242)  3.225 ms  3.216 ms  3.209 ms
+ 5  l49-128-2.novotelecom.ru (178.49.128.2)  2.272 ms  2.223 ms  3.191 ms
+ 6  net131.234.188-158.ertelecom.ru (188.234.131.158)  59.443 ms  43.225 ms  43.204 ms
+ 7  net131.234.188-159.ertelecom.ru (188.234.131.159)  44.495 ms  44.743 ms 72.14.214.138 (72.14.214.138)  43.859 ms
+ 8  * * *
+ 9  209.85.240.254 (209.85.240.254)  44.571 ms  44.484 ms 74.125.244.129 (74.125.244.129)  45.719 ms
+10  74.125.244.132 (74.125.244.132)  44.611 ms 74.125.244.180 (74.125.244.180)  45.318 ms 74.125.244.133 (74.125.244.133)  45.105 ms
+11  72.14.232.85 (72.14.232.85)  45.276 ms 142.251.51.187 (142.251.51.187)  46.983 ms 142.251.61.221 (142.251.61.221)  47.741 ms
+12  142.251.51.187 (142.251.51.187)  47.057 ms 216.239.56.101 (216.239.56.101)  46.856 ms 142.251.61.219 (142.251.61.219)  47.903 ms
+13  * 209.85.251.63 (209.85.251.63)  47.158 ms 216.239.47.203 (216.239.47.203)  47.768 ms
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  dns.google (8.8.8.8)  47.822 ms * *
+
+6.  Задержка увеличивается по мере прохождения пакета по роутерам, чем дальше тем больше задержка, соответственно на последних ip она и будет выше.
+7.  ;; QUESTION SECTION:
+;dns.google.                    IN      A
+
+;; ANSWER SECTION:
+dns.google.             118     IN      A       8.8.8.8
+dns.google.             118     IN      A       8.8.4.4
+8.
+;; ANSWER SECTION:
+8.8.8.8.in-addr.arpa.   18540   IN      PTR     dns.google.
 
