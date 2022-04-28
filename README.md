@@ -1,26 +1,25 @@
-1. Linux : ip a, ip show link, ifconfig (sudo apt install net-tools)
-Windows : Всегда использую ipconfig /all еще есть netsh interface show interface
-2. Ну для начала посылается широковещательный запрос ARP а потом уже все остальное, LLDP не везде включен и устройства
-могут ничего о себе не рассказать, используется пакет lldpctl, команда sudo lldpctl
-3. VLAN, в своей практики никогда не работал с VLAN хоть и строил большие сети на OSPF и VLAN тестовые , все разделение происходило по маскам,
-Пример конфига :
-auto eth0.1
-iface eth0.1 inet static
-address 192.168.0.6
-netmask 255.255.255.0
-vlan-raw-device eth0
-4. mode=0 (balance-rr) mode=1 (active-backup) mode=2 (balance-xor) mode=3 (broadcast) mode=4 (802.3ad) mode=5 (balance-tlb) mode=6 (balance-alb)
-Для балансировки используется mode=0 (balance-rr)
-Конфиг:
-auto bond0
-iface bond0 inet dhcp
-   bond-slaves eth0 eth0
-   bond-mode active-backup
-   bond-miimon 100
-   bond-primary eth0 eth0
-5. Сколько IP адресов в сети с маской /29 ? Ответ: 6
-Сколько /29 подсетей можно получить из сети с маской /24 Ответ : 31 (от 0-8 до 248)
-6. Есть еще локальный диапазон 100.64.0.0/26
-7. arp -a, ip neigh flush all, sudo arp -d 192.168.1.4
-8. Установлен cisco packet tracer, там можно наблюдать lldp, vlan
-
+1. Routing entry for 37.192.0.0/16
+  Known via "bgp 6447", distance 20, metric 0
+  Tag 3267, type external
+  Last update from 194.85.40.15 1d05h ago
+  Routing Descriptor Blocks:
+  * 194.85.40.15, from 194.85.40.15, 1d05h ago
+      Route metric is 0, traffic share count is 1
+      AS Hops 3
+   Route tag 3267
+      MPLS label: none
+2.	sudo modprobe -v dummy numdummies=2
+	sudo ip addr add 10.10.10.10/24 dev dummy0
+sudo ip link set dummy0 up  
+ip route add  8.8.8.8/32 via  10.10.10.10
+root@gitserver:/home/maks# ip route
+default via 192.168.1.1 dev eth0 proto dhcp metric 100 
+8.8.8.8 via 10.10.10.10 dev dummy0 
+10.10.10.0/24 dev dummy0 proto kernel scope link src 10.10.10.10 
+54.25.7.14 via 10.10.10.10 dev dummy0 
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.5 metric 100
+3. sudo ss -46tlpn
+Например ssh 22 порт 
+4. sudo ss -upan 
+5. По скольку карта сети на работе очень большая и рисовать ее очень долго и домашняя карта тоже не маленькая,
+ порядка 20 устройств то вот небольшая граф сводка из zabbix (Смотреть файл Map network)
