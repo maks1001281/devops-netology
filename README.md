@@ -1,25 +1,12 @@
-1. Routing entry for 37.192.0.0/16
-  Known via "bgp 6447", distance 20, metric 0
-  Tag 3267, type external
-  Last update from 194.85.40.15 1d05h ago
-  Routing Descriptor Blocks:
-  * 194.85.40.15, from 194.85.40.15, 1d05h ago
-      Route metric is 0, traffic share count is 1
-      AS Hops 3
-   Route tag 3267
-      MPLS label: none
-2.	sudo modprobe -v dummy numdummies=2
-	sudo ip addr add 10.10.10.10/24 dev dummy0
-sudo ip link set dummy0 up  
-ip route add  8.8.8.8/32 via  10.10.10.10
-root@gitserver:/home/maks# ip route
-default via 192.168.1.1 dev eth0 proto dhcp metric 100 
-8.8.8.8 via 10.10.10.10 dev dummy0 
-10.10.10.0/24 dev dummy0 proto kernel scope link src 10.10.10.10 
-54.25.7.14 via 10.10.10.10 dev dummy0 
-192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.5 metric 100
-3. sudo ss -46tlpn
-Например ssh 22 порт 
-4. sudo ss -upan 
-5. По скольку карта сети на работе очень большая и рисовать ее очень долго и домашняя карта тоже не маленькая,
- порядка 20 устройств то вот небольшая граф сводка из zabbix (Смотреть файл Map network)
+1. Все свои пароли храню у себя в голове, в корп среде храню в TeeamPass, использование сторонних сервисов не безопасно.
+2. Google authenticator уже стоит, использую для входа в свои аккаунты и в том числе корп
+3. Установил, сгенерировал, установил, работает
+4. Проверял DNS и сайт своей организации , серьёзных  нарушений безопасности не нашлось
+5. C горем пополам сделал, возникали разные ошибки, мучался часов 6, потом сделал наоборот, на клиентской машине сгенерил серт и подключился с сервера, с сервера на клиентскую не получается, я так и не смог это победить.
+6. Создал файл config, дал права 744 на файл, подключение работает,  c содержимым :
+Host gitserver
+    HostName 192.168.1.5
+    User maks
+    Port 22
+7. tcpdump -c 100 -w tcpdump.pcap, открыл на винде тк нельзя через консольку открыть, в основном широковещательный трафик, есть ospf трафик, ssh, ping
+
