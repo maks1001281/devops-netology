@@ -6,9 +6,14 @@
 2.2 Push мне кажется надежнее, тк ты управляешь конфигами централизовано и контролируемо, метод push безопаснее 
 3. 
 3.1 Виртуального провайдера использую HyperV
+
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/Hyperv.PNG?raw=true "Optional Title")
+
 3.2 Vagrant
+
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/Vagrant.PNG?raw=true "Optional Title")
+
 3.3 Ansible стоит как отдельная виртуальная машина
+
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/Ansible.PNG?raw=true "Optional Title")
 
