@@ -1,6 +1,6 @@
 1. image
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/image.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/Image.PNG?raw=true "Optional Title")
 
 2. vm
 
