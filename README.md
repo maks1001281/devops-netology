@@ -1,37 +1,12 @@
-1.	https://hub.docker.com/repository/docker/1001281/maks
-2.	
-2.2 Высоконагруженное монолитное java веб-приложение:
-Если высоконагруженное то это физический или виртуальный сервер, тк приложение монолитное и нагруженное нету смысла помещать его в контейнер.
-2.3 Nodejs веб-приложение:
-Лучше подойдет докер контейнер, тк удобно переносить, разворачивать и управлять библиотеками
-2.4 Мобильное приложение c версиями для Android и iOS
-Думаю что докер не подойдет, если это прод и стабильно работающие приложения то лучший вариант виртуалка тк нету необходимости постоянно разворачивать какие то тестовые версии и сервисы, в разработке можно использовать docker.
-2.5 Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana:
-Здесь все зависит от нагрузки и объема логов, если высокая нагрузка и большая БД то лучше виртуальные машины, если же нет то можно наиболее загруженный сервис вынести на виртуалку а kibana например в docker
-2.6 Мониторинг-стек на базе Prometheus и Grafana
-Здесь можно использовать и Docker и Виртуализацию, если сервис статичный то лучше использовать вирт машины, если же где то в тест или прод среде с быстро изменяющейся архитектурой то для общей картины и  удобности масштабирования развертывания и переноса лучше подойдет Docker
-2.7 Шина данных на базе Apache Kafka:
-Это брокер для сбора и обмена данными, скорее всего он будет работать в среде Docker рядом с другими приложениями
-2.8 MongoDB, как основное хранилище данных для java-приложения:
-Здесь больше подойдет виртуальная машина для надежности, для тестовой среды для удобства можно использовать Docker
-2.9 Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry.
-Здесь больше подойдет виртуальная машина для хранения CI\CD и Docker Registry, тк это главный узел управления тут нужна большая надежность и изолированность от внешних факторов.
+1. image
 
-3. Создал контейнеры и подмонтировал /data :
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/image.PNG?raw=true "Optional Title")
 
-sudo docker run -it --name docker10 -v /data:/data -d debian
-sudo docker run -it --name centos1 -v /data:/data -d centos
-Создал файл, дописал в файл из  контейнера, файл изменился везде
+2. vm
 
-debian:
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/vm.PNG?raw=true "Optional Title")
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/1.PNG?raw=true "Optional Title")
+3. grafana 
 
-centor:
-
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/2.PNG?raw=true "Optional Title")
-
-docker:
-
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/3.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Image/grafana.PNG?raw=true "Optional Title")
 
