@@ -8,7 +8,7 @@
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/base.PNG?raw=true "Optional Title")
 
 ### Описание таблицы clients:
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/clienst.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/clients.PNG?raw=true "Optional Title")
 
 ### Описание таблицы orders:
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/orders.PNG?raw=true "Optional Title")
