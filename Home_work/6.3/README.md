@@ -46,7 +46,7 @@ ALTER TABLE orders ENGINE = MyISAM;
 
 ### MyISAM:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/maisam.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/myisam.PNG?raw=true "Optional Title")
 
 ### InnoDB:
 
