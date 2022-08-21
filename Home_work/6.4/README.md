@@ -14,7 +14,7 @@
 ## Задача 2
 ### Запрос SQL:
 
-select avg_width from pg_stats where tablename='orders'
+	select avg_width from pg_stats where tablename='orders'
 
 ### Результат:
 
@@ -29,16 +29,16 @@ select avg_width from pg_stats where tablename='orders'
 	INHERITS (orders)
 
 
- create table orders2 (
- check (price <= 499))
- INHERITS (orders)
+	create table orders2 (
+	check (price <= 499))
+	INHERITS (orders)
 
 
- insert into orders1 select * from orders
- where price > 499
+	insert into orders1 select * from orders
+	where price > 499
 
- insert into orders2 select * from orders
- where price <= 499
+	insert into orders2 select * from orders
+	where price <= 499
 
 ### Результат:
 
@@ -57,9 +57,9 @@ select avg_width from pg_stats where tablename='orders'
 ## Задача 4
 ### Делаем бэкап:
 
-pg_dump -U user -W test_database > /media/postgresql/backup/test_database.dump
+	pg_dump -U user -W test_database > /media/postgresql/backup/test_database.dump
 
 ### Можно создать индекс для эффективного регистронезависимого поиска:
 
-CREATE INDEX ON orders ((lower(title)))
+	CREATE INDEX ON orders ((lower(title)))
 
