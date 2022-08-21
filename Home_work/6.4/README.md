@@ -5,11 +5,11 @@
 
 ### Управляющие команды SQL:
 
-вывода списка БД: \l
-подключения к БД: \c 
-вывода списка таблиц: \dt 
-вывода описания содержимого таблиц: \d
-выхода из psql: \q
+### вывода списка БД: \l
+### подключения к БД: \c 
+### вывода списка таблиц: \dt 
+### вывода описания содержимого таблиц: \d
+### выхода из psql: \q
 
 ## Задача 2
 ### Запрос SQL:
@@ -44,15 +44,15 @@ where price <= 499
 
 ### orders 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders1.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders_1.PNG?raw=true "Optional Title")
 
 ### orders 2
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders2.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders_2.PNG?raw=true "Optional Title")
 
 ### Можно ли было изначально исключить "ручное" разбиение при проектировании таблицы orders:
 
-Можно, нужно было при создании таблицы сделать ее секционной, разбив секцию на price > 499 и price <=499
+### Можно, нужно было при создании таблицы сделать ее секционной, разбив секцию на price > 499 и price <=499
 
 ## Задача 4
 ### Делаем бэкап:
