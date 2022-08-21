@@ -23,22 +23,22 @@ select avg_width from pg_stats where tablename='orders'
 ## Задача 3
 ### Запрос SQL:
 
-###### select * from orders1
-###### create table orders1 (
-###### check (price > 499))
-###### INHERITS (orders)
+	select * from orders1
+	create table orders1 (
+	check (price > 499))
+	INHERITS (orders)
 
 
-###### create table orders2 (
-###### check (price <= 499))
-###### INHERITS (orders)
+ create table orders2 (
+ check (price <= 499))
+ INHERITS (orders)
 
 
-###### insert into orders1 select * from orders
-###### where price > 499
+ insert into orders1 select * from orders
+ where price > 499
 
-###### insert into orders2 select * from orders
-###### where price <= 499
+ insert into orders2 select * from orders
+ where price <= 499
 
 ### Результат:
 
