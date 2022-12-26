@@ -1,0 +1,19 @@
+---
+  el:
+    hosts:
+      ubuntu16.04:
+        ansible_host: 192.168.1.24
+        ansible_user: user
+        ansible_password: user
+  deb:
+    hosts:
+      ubuntu20.04:
+        ansible_host: 192.168.1.25
+        ansible_user: user
+        ansible_password: user
+  local:
+   hosts:
+    local:
+      ansible_host: 127.0.0.1
+      ansible_user: maks
+      ansible_password: 1
