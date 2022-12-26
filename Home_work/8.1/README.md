@@ -1,10 +1,10 @@
 ## Задание 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/8.1/1.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/8.1/1.PNG?raw=true "Optional Title")
 
 ## Задание 2
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/2.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/2.PNG?raw=true "Optional Title")
 
 ## Задание 3
 
@@ -12,7 +12,7 @@
 
 ## Задание 4
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/4.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/4.PNG?raw=true "Optional Title")
 
 ## Задание 5
 
@@ -20,19 +20,19 @@
 
 ## Задание 6
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/5.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/5.PNG?raw=true "Optional Title")
 
 ## Задание 7
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/7.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/7.PNG?raw=true "Optional Title")
 
 ## Задание 8
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/8.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/8.PNG?raw=true "Optional Title")
 
 ## Задание 9
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/9.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/9.PNG?raw=true "Optional Title")
 
 ## Задание 10
 
@@ -59,5 +59,5 @@
 ```
 ## Задание 11
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/10.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/10.PNG?raw=true "Optional Title")
 
