@@ -1,6 +1,6 @@
 ## Задание 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/8.1/1.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/1.PNG?raw=true "Optional Title")
 
 ## Задание 2
 
@@ -31,6 +31,8 @@
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/8.PNG?raw=true "Optional Title")
 
 ## Задание 9
+
+### Не нашел ничего с помощью команды ansible-doc но нешел в оф мануале ansible
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/9.PNG?raw=true "Optional Title")
 
