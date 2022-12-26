@@ -1,6 +1,6 @@
 ## Задание 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/1.PNG?raw=true
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/8.1/1.PNG?raw=true
 
 ## Задание 2
 
