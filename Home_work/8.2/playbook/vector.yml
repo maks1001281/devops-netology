@@ -1,0 +1,40 @@
+---
+- name: Install vector
+  hosts: vector
+  tasks:
+  - name: Download
+    ansible.builtin.get_url:
+      url: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-x86_64-unknown-linux-gnu.tar.gz"
+      dest: /home/maks/vector.tar.gz
+  - name: Unarchive
+    become: true
+    ansible.builtin.unarchive:
+      src: /home/maks/vector.tar.gz
+      dest: /home/maks
+      remote_src: yes
+  - name: Export PATH
+    ansible.builtin.shell: echo "export PATH=\"/home/maks/vector-x86_64-unknown-linux-gnu/bin:\$PATH\"" >> $HOME/.profile
+    args:
+      executable: /bin/bash
+  - name: Sourse PATH
+    ansible.builtin.shell: source $HOME/.profile
+    args:
+      executable: /bin/bash
+  - name: pause
+    ansible.builtin.pause:
+      seconds: 3
+  - name: Cp bin
+    become: true
+    ansible.builtin.copy:
+      src: /home/maks/vector-x86_64-unknown-linux-gnu/bin/vector
+      dest: /usr/bin/
+      remote_src: yes
+  - name: cp config
+    become: true
+    ansible.builtin.copy:
+      src: /home/maks/vector-x86_64-unknown-linux-gnu/config/vector.toml
+      dest: /etc/vector/
+      remote_src: yes
+    tags:
+      - reconfig
+
