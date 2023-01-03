@@ -10,11 +10,19 @@
 
 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
 
+
+
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.2/6.PNG?raw=true "Optional Title")
+
+
 
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
+
+
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.2/7.PNG?raw=true "Optional Title")
+
+
 
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 (Результат идемпотентен)
