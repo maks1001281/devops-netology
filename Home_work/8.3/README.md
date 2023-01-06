@@ -1,8 +1,8 @@
 
-### Данный playbook усстанавливает nginx, git, lighthouse, тегов не предусмотрено
+### Данный playbook устанавливает nginx, git, lighthouse, тегов не предусмотрено
 #### Опционально: создает образ диска с помошью packer, подготавливвет инфраструктуру с помощью terraform
 
-### 2 При создании tasks рекомендую использовать модули: get_url, template, yum, apt (Использовал shell, get, apt)
+### 2 При создании tasks рекомендую использовать модули: get_url, template, yum, apt (Использовал shell, git, apt)
 
 ### 4 Приготовьте свой собственный inventory файл prod.yml
 
