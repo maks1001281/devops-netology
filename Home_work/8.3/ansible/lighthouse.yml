@@ -1,0 +1,24 @@
+---
+- name: install clickhouse
+  hosts: clickhouse
+  tasks:
+    - name: Install nginx
+      become: true
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+    - name: Install git
+      become: true
+      ansible.builtin.apt:
+        name: git
+        state: latest
+    - name: rm default site
+      become: true
+      ignore_errors: True
+      ansible.builtin.shell: rm -R /var/www/html/*
+    - name: Read-write git checkout from github
+      become: true
+      ansible.builtin.git:
+        repo: https://github.com/VKCOM/lighthouse.git
+        dest: /var/www/html/
+        force: true

@@ -1,0 +1,7 @@
+---  
+  lighthouse:
+    hosts:
+      clickhouse:
+        ansible_host: 158.160.33.253
+        ansible_user: ubuntu
+      
