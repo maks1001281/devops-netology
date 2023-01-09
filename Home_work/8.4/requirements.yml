@@ -1,0 +1,9 @@
+---
+  - src: git@github.com:maks1001281/lighthouse-role.git
+    scm: git
+    version: "v1.0.1"
+    name: lighthouse
+  - src: git@github.com:maks1001281/vector-role.git
+    scm: git
+    version: "v1.0.0"
+    name: vector

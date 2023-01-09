@@ -1,0 +1,20 @@
+---
+vector:
+  hosts:
+    vector:
+     ansible_host: 192.168.1.17
+     ansible_user: maks
+     ansible_password: 1
+lighthouse:
+  hosts:
+    lighthouse:
+     ansible_host: 192.168.1.17
+     ansible_user: maks
+     ansible_password: 1
+clickhouse::
+  hosts:
+    clickhouse:
+     ansible_host: 192.168.1.17
+     ansible_user: maks
+     ansible_password: 1
+
