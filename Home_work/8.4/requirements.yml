@@ -7,3 +7,7 @@
     scm: git
     version: "v1.0.0"
     name: vector
+  - src: git@github.com:maks1001281/Clickhouse-role.git
+    scm: git
+    version: "v1.0.0"
+    name: clickhouse
