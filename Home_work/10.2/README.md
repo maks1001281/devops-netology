@@ -36,14 +36,14 @@
 
 ### 7.
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick.png?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/10.2/tick.png?raw=true "Optional Title")
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick2.png?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/10.2/tick2.png?raw=true "Optional Title")
 
 ### 8.
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/metric.png?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/10.2/metric.png?raw=true "Optional Title")
 
 ### 9.
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/docker.png?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/tree/main/Home_work/10.2/docker.png?raw=true "Optional Title")
