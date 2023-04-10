@@ -48,4 +48,9 @@ node_memory_MemTotal_bytes - node_memory_MemFree_bytes
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/alert.PNG?raw=true "Optional Title")
 
+### Задание 4
+
+[JSON](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/json.txt)
+
+
 
