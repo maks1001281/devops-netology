@@ -42,7 +42,7 @@
 
 ### 8.
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/metric.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/disk.PNG?raw=true "Optional Title")
 
 ### 9.
 
