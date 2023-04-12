@@ -22,7 +22,7 @@
  
 #### Протокол tcp, менее гибкая настройка и удобство использования если сравнивать с Zabbix
 
-### 6.
+### Задание 6.
 
 #### Prometheus : Pull
 
@@ -34,16 +34,16 @@
 
 #### Nagios: Pull
 
-### 7.
+### Задание 7.
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick.PNG?raw=true "Optional Title")
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick2.PNG?raw=true "Optional Title")
 
-### 8.
+### Задание 8.
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/disk.PNG?raw=true "Optional Title")
 
-### 9.
+### Задание 9.
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/docker.PNG?raw=true "Optional Title")
