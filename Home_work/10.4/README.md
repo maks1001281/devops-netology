@@ -8,7 +8,7 @@
 
 #### Stack trace
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.4/trace.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.4/trase.PNG?raw=true "Optional Title")
 
 #### Issues
 
