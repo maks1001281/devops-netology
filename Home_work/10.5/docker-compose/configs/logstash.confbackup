@@ -1,6 +1,7 @@
 input {
-  beats {
+  tcp {
     port => 5046
+    codec => json
   }
 }
 
@@ -14,8 +15,8 @@ filter {
 
 output {
   elasticsearch { 
-    hosts => ["192.168.1.14:9200"] 
-    index => "logstash-%{[@metadata][indexdate]}"
+    hosts => ["es-hot:9200"] 
+    index => "logstash-%{[@metadata][indexDate]}"
   }
   stdout { codec => rubydebug }
 }

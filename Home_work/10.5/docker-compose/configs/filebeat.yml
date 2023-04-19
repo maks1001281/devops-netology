@@ -12,10 +12,7 @@ processors:
       target: "json"
       overwrite_keys: true
 
-output.elasticsearch:
-  hosts: ["192.168.1.15:9200"]
-#output.console:
-#  enabled: true
-
+output.logstash:
+  hosts: ["192.168.1.14:5046"]
 logging.json: true
 logging.metrics.enabled: false
