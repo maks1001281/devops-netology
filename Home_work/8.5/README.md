@@ -257,7 +257,7 @@ INFO     Pruning extra files from scenario ephemeral directory
 
 ## Tox
 
-<details>
+<details1>
 <summary>Podman</summary>
 
 ```
@@ -322,6 +322,6 @@ ok: [localhost] => (item="centos7 command: None specified")
 TASK [Remove possible pre-existing containers] *********************************
 ```
 
-<details>
+<details1>
 
 [Vector-role](https://github.com/maks1001281/vector-role/tree/master/vector)
