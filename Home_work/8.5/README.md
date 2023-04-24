@@ -10,13 +10,8 @@
 
 ## Tox
 
-#### Docker error
+#### Tox test
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.5/dockererror.PNG?raw=true "Optional Title")
-
-
-## VMerror
-
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.5/vmerror.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.5/test.PNG?raw=true "Optional Title")
 
 [Vector-role](https://github.com/maks1001281/vector-role/tree/master/vector)
