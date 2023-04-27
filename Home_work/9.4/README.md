@@ -6,7 +6,7 @@
 
 ### Multibranch Pipeline
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/9.4/mpipiline.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/9.4/mpipeline.PNG?raw=true "Optional Title")
 
 ### Scripted Pipeline
 
