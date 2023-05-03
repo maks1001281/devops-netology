@@ -1,6 +1,6 @@
 ## Задание 1 Pods
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.1/pods.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/pods.PNG?raw=true "Optional Title")
 
 ```
 apiVersion: v1
@@ -17,7 +17,7 @@ spec:
 
 ## Задание 2 Service
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.1/service.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/service.PNG?raw=true "Optional Title")
 
 ```
 apiVersion: v1
