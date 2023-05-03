@@ -48,3 +48,7 @@ spec:
     port: 9090
     targetPort: http-web-svc
 ```
+
+#### kubectl get pods
+
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/get.PNG?raw=true "Optional Title")
