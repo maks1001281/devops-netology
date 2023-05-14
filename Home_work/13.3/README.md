@@ -125,7 +125,7 @@ spec:
           name: nginx
 ```
 
-#### ingress, service, secret, configmap
+#### Выпустить самоподписной сертификат SSL,создать Secret для использования сертификата,создать Ingress и необходимый Service, подключить к нему SSL в вид ingress, service, secret, configmap
 
 ```
 apiVersion: networking.k8s.io/v1
