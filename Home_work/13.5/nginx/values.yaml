@@ -1,0 +1,5 @@
+container:
+  image: nginx:1.19.10
+  name: nginx-helm-10
+name: nginx1-19-10
+namespace: app2
