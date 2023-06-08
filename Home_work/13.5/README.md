@@ -8,6 +8,11 @@
 
 [deployment](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/nginx/templates/deployment.yaml)
 
+### helm history, сделал тестовый rollback
+
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/rollback.PNG?raw=true "Optional Title")
+
+
 ## Задание 2
 
 #### Helm list
