@@ -2,7 +2,7 @@
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/ansible.PNG?raw=true "Optional Title")
 
-### Подключаемся к мастер ноде и копирием config file
+### Подключаемся к мастер ноде и копируем config file
 ```
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
