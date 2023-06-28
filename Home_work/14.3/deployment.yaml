@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: app
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - image: docker.io/wbitt/network-multitool:latest
+        name: frontend
+        ports:
+        - containerPort: 80
+        env:
+        - name: HTTP_PORT
+          value: "80"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: app
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - image: docker.io/wbitt/network-multitool:latest
+        name: backend
+        ports:
+        - containerPort: 90
+        env:
+        - name: HTTP_PORT
+          value: "90"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cache
+  namespace: app
+  labels:
+    app: cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cache
+  template:
+    metadata:
+      labels:
+        app: cache
+    spec:
+      containers:
+      - image: docker.io/wbitt/network-multitool:latest
+        name: cache
+        ports:
+        - containerPort: 100
+        env:
+        - name: HTTP_PORT
+          value: "100"

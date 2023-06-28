@@ -26,7 +26,7 @@ spec:
         volumeMounts:
         - name: config
           mountPath: /input
-      - image: docker.io/wbitt/network-multitool:latest
+      - image: 
         name: multitool
         volumeMounts:
         - name: config
