@@ -14,7 +14,7 @@
 
 ### Смотрим картинку в бакете с https, dns зоны
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.3/wite.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.3/site.PNG?raw=true "Optional Title")
 
 ![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.3/web.PNG?raw=true "Optional Title")
 
