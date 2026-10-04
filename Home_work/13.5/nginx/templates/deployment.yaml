@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ .Values.name }}
+  namespace: {{ .Values.namespace | default .Release.Namespace }}
 spec:
   ports:
   - name: nginx
@@ -14,10 +15,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.name }}
+  namespace: {{ .Values.namespace | default .Release.Namespace }}
   labels:
     app: {{ .Values.name }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: {{ .Values.name }}
@@ -31,3 +33,11 @@ spec:
         name: {{ .Values.container.name }}
         ports:
         - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 3
+          periodSeconds: 10
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}

@@ -2,23 +2,23 @@
 
 #### Полностью пушить все 3 версии приложения не буду тк там меняются только значения в vars и имя деплоя в heml
 
-[Chart](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/nginx/Chart.yaml)
+[Chart](nginx/Chart.yaml)
 
-[values](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/nginx/values.yaml)
+[values](nginx/values.yaml)
 
-[deployment](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/nginx/templates/deployment.yaml)
+[deployment](nginx/templates/deployment.yaml)
 
 ### helm history, сделал тестовый rollback
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/rollback.PNG?raw=true "Optional Title")
+![rollback](rollback.PNG)
 
 
 ## Задание 2
 
 #### Helm list
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/helm.PNG?raw=true "Optional Title")
+![helm](helm.PNG)
 
 #### deployment в OpenLens
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.5/lens.PNG?raw=true "Optional Title")
+![lens](lens.PNG)

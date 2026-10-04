@@ -38,7 +38,7 @@ spec:
 
 #### Чтение лога после применения deployment
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.1/path.PNG?raw=true "Optional Title")
+![path](path.PNG)
 
 ## Задание 2
 
@@ -74,4 +74,4 @@ spec:
 
 #### Чтение логов после применения DaemonSet
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.1/logs.PNG?raw=true "Optional Title")
+![logs](logs.PNG)

@@ -1,6 +1,6 @@
 ## Задание 1 Pods
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/pods.PNG?raw=true "Optional Title")
+![pods](pods.PNG)
 
 ```
 apiVersion: v1
@@ -17,7 +17,7 @@ spec:
 
 ## Задание 2 Service
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/service.PNG?raw=true "Optional Title")
+![service](service.PNG)
 
 ```
 apiVersion: v1
@@ -51,4 +51,4 @@ spec:
 
 #### kubectl get pods
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.2/get.PNG?raw=true "Optional Title")
+![get](get.PNG)

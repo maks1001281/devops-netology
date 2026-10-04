@@ -1,11 +1,11 @@
 ### Задание 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/data.PNG?raw=true "Optional Title")
+![data](data.PNG)
 
 ### Задание 2 
 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/dashboard.PNG?raw=true "Optional Title")
+![dashboard](dashboard.PNG)
 
 
 #### Отобразить дешборд по CPU не удалось из за этой ошибки, пробовал в разных браузерах и кодировках вставлять\копировать, не помогло
@@ -13,7 +13,7 @@
 [Проблема](https://community.grafana.com/t/parse-error-at-char-4-unexpected-character-ufeff/40704/5)
 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/dashboard_bag.PNG?raw=true "Optional Title")
+![dashboard_bag](dashboard_bag.PNG)
 
 
 #### Утилизация CPU для nodeexporter (в процентах, 100-idle)
@@ -46,11 +46,11 @@ node_memory_MemTotal_bytes - node_memory_MemFree_bytes
 ```
 ### Задание 3 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/alert.PNG?raw=true "Optional Title")
+![alert](alert.PNG)
 
 ### Задание 4
 
-[JSON](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.3/json.txt)
+[JSON](json.txt)
 
 
 

@@ -2,18 +2,18 @@
 
 ### Docker ps
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.5/docker.PNG?raw=true "Optional Title")
+![docker](docker.PNG)
 
 ### Kibana 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.5/discover.PNG?raw=true "Optional Title")
+![discover](discover.PNG)
 
 ### Docker-compose manifest and config file:
 
-[Docker-compose](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.5/docker-compose)
+[Docker-compose](docker-compose)
 
 ## Задание 2
 
 ### Index
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.5/index.PNG?raw=true "Optional Title")
+![index](index.PNG)

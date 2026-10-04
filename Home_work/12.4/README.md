@@ -72,9 +72,9 @@ spec:
 
 #### Curl запрос на service
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.4/curl9001.PNG?raw=true "Optional Title")
+![curl9001](curl9001.PNG)
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.4/curl9002.PNG?raw=true "Optional Title")
+![curl9002](curl9002.PNG)
 
 ## Задание 2 
 
@@ -99,4 +99,4 @@ spec:
 
 #### Запрос с браузера
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.4/nodeport.PNG?raw=true "Optional Title")
+![nodeport](nodeport.PNG)

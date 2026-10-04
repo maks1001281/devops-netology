@@ -44,14 +44,14 @@ CMD python3.9 python_api/app.py
 
 ### Лог успешного выполнения пайплайна
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.6/pupeline.PNG?raw=true "Optional Title")
+![pupeline](pupeline.PNG)
 
 ### Решеный Issue
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.6/task1.PNG?raw=true "Optional Title")
+![task1](task1.PNG)
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.6/task2.PNG?raw=true "Optional Title")
+![task2](task2.PNG)
 
 ### Web запрос после выполнения Issue
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.6/web.PNG?raw=true "Optional Title")
+![web](web.PNG)

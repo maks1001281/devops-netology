@@ -1,15 +1,15 @@
 ## Задача 1
 ### Docker compose file:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/docker.PNG?raw=true "Optional Title")
+![docker](docker.PNG)
 
 ### Статус БД \s :
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/info.PNG?raw=true "Optional Title")
+![info](info.PNG)
 
 ### Колличество записей price > 300:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/price.PNG?raw=true "Optional Title")
+![price](price.PNG)
 
 ## Задача 2
 ### SQL запросы:
@@ -30,14 +30,14 @@ SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER='test';
 
 ### Результат:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/attribute.PNG?raw=true "Optional Title")
+![attribute](attribute.PNG)
 
 ## Задача 3:
 ### SQL запросы:
 
 show create table orders
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/engine.PNG?raw=true "Optional Title")
+![engine](engine.PNG)
 
 ### Меняем движок в таблицах:
 
@@ -46,13 +46,13 @@ ALTER TABLE orders ENGINE = MyISAM;
 
 ### MyISAM:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/myisam.PNG?raw=true "Optional Title")
+![myisam](myisam.PNG)
 
 ### InnoDB:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/innodb.PNG?raw=true "Optional Title")
+![innodb](innodb.PNG)
 
 ## Задача 4:
 ### my.cnf:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.3/config.PNG?raw=true "Optional Title")
+![config](config.PNG)

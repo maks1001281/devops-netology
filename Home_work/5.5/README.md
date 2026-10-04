@@ -10,8 +10,8 @@
 
 ## Docker node
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/docker_swarm/docker_node.PNG?raw=true "Optional Title")
+![docker_node](docker_node.PNG)
 
 ## Docker service
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/docker_swarm/docker_service.PNG?raw=true "Optional Title")
+![docker_service](docker_service.PNG)

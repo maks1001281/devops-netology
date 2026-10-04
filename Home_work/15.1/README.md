@@ -1,22 +1,22 @@
 
 ### Файлы Terraform 
 
-[Terraform](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/terraform)
+[Terraform](terraform)
 
 ### Смотрим созданную инфраструктуру в YC
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/yc_net.PNG?raw=true "Optional Title")
+![yc_net](yc_net.PNG)
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/yc_route.PNG?raw=true "Optional Title")
+![yc_route](yc_route.PNG)
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/yc_vm.PNG?raw=true "Optional Title")
+![yc_vm](yc_vm.PNG)
 
 
 ### Заходим на public vm и проверяем доступ в интернет 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/ping_public.PNG?raw=true "Optional Title")
+![ping_public](ping_public.PNG)
 
 ### Копируем ключ на public_vm с terraform машины заходим на private_vm проверяем доступ в интернет
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/15.1/ping_private.PNG?raw=true "Optional Title")
+![ping_private](ping_private.PNG)
 

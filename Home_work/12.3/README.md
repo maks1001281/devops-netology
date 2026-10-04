@@ -35,11 +35,11 @@ spec:
 
 #### Колличество pod до масштабирования
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.3/replica1.PNG?raw=true "Optional Title")
+![replica1](replica1.PNG)
 
 #### Колличество pod после масштабирования 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.3/replica2.PNG?raw=true "Optional Title")
+![replica2](replica2.PNG)
 
 #### Service
 
@@ -78,7 +78,7 @@ spec:
 
 #### Запрос Curl внутри контейнера 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.3/curl.PNG?raw=true "Optional Title")
+![curl](curl.PNG)
 
 ## Задание 2
 
@@ -130,4 +130,4 @@ spec:
 
 #### Состояние pod до и после запуска service
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/12.3/init.PNG?raw=true "Optional Title")
+![init](init.PNG)

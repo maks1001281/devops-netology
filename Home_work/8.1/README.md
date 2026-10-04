@@ -1,10 +1,10 @@
 ## Задание 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/1.PNG?raw=true "Optional Title")
+![1](1.PNG)
 
 ## Задание 2
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/2.PNG?raw=true "Optional Title")
+![2](2.PNG)
 
 ## Задание 3
 
@@ -12,7 +12,7 @@
 
 ## Задание 4
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/4.PNG?raw=true "Optional Title")
+![4](4.PNG)
 
 ## Задание 5
 
@@ -20,21 +20,21 @@
 
 ## Задание 6
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/5.PNG?raw=true "Optional Title")
+![5](5.PNG)
 
 ## Задание 7
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/7.PNG?raw=true "Optional Title")
+![7](7.PNG)
 
 ## Задание 8
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/8.PNG?raw=true "Optional Title")
+![8](8.PNG)
 
 ## Задание 9
 
 ### Не нашел ничего с помощью команды ansible-doc но нешел в оф мануале ansible
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/9.PNG?raw=true "Optional Title")
+![9](9.PNG)
 
 ## Задание 10
 
@@ -61,5 +61,5 @@
 ```
 ## Задание 11
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.1/10.PNG?raw=true "Optional Title")
+![10](10.PNG)
 

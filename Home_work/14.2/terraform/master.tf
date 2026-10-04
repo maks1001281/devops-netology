@@ -15,7 +15,7 @@ resource "yandex_compute_instance" "ubuntu2204" {
 
   boot_disk {
     initialize_params {
-      image_id = "fd8qes7jgsjvuudp80td"
+      image_id = var.image_id
       size     = "30"
       type     = "network-nvme"
 
@@ -24,7 +24,7 @@ resource "yandex_compute_instance" "ubuntu2204" {
   }
 
   network_interface {
-    subnet_id = "e9bq93otsvu9tqle1mt1"
+    subnet_id = var.subnet_id
     nat       = true
   }
 

@@ -1,6 +1,6 @@
 ### Выполненный Playbook
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/ansible.PNG?raw=true "Optional Title")
+![ansible](ansible.PNG)
 
 ### Подключаемся к мастер ноде и копируем config file
 ```
@@ -11,17 +11,17 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ### Делаем запрос
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/node.PNG?raw=true "Optional Title")
+![node](node.PNG)
 
 ### Проверяем работу кластера с контейнером nginx
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/pods.PNG?raw=true "Optional Title")
+![pods](pods.PNG)
 
 ### Скрин машин с YC
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/yc.PNG?raw=true "Optional Title")
+![yc](yc.PNG)
 
 
 ### Файлы Terraform 
 
-[Terraform](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.2/terraform)
+[Terraform](terraform)
