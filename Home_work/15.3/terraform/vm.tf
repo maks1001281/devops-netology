@@ -4,14 +4,14 @@ resource "yandex_iam_service_account" "ig-sa" {
 }
 
 resource "yandex_resourcemanager_folder_iam_member" "editor" {
-  folder_id = "b1gf9lcio0r7vnajphej"
+  folder_id = var.folder_id
   role      = "editor"
   member   = "serviceAccount:${yandex_iam_service_account.ig-sa.id}"
 }
 
 resource "yandex_compute_instance_group" "ig-1" {
   name               = "fixed-ig-with-balancer"
-  folder_id          = "b1gf9lcio0r7vnajphej"
+  folder_id          = var.folder_id
   service_account_id = "${yandex_iam_service_account.ig-sa.id}"
   deletion_protection = "false"
   instance_template {

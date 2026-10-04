@@ -45,7 +45,7 @@ EXPOSE  9200 9300
 ## Задача 2
 ### Получаем список индексов:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/index.PNG?raw=true "Optional Title")
+![index](index.PNG)
 
 ### Получаем состояние кластера elasticsearch(На момент завершения третьего задания):
 
@@ -80,23 +80,23 @@ curl -XGET localhost:9200/_cluster/health/?pretty
 ### Задача 3
 ### Создаем репозиторий:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/createrepo.PNG?raw=true "Optional Title")
+![createrepo](createrepo.PNG)
 
 ### Приводим список индксов:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/testindex.PNG?raw=true "Optional Title")
+![testindex](testindex.PNG)
 
 ### Папка с файлами снапшотов:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/filebackup.PNG?raw=true "Optional Title")
+![filebackup](filebackup.PNG)
 
 ###  Новый список индексов:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/test2.PNG?raw=true "Optional Title")
+![test2](test2.PNG)
 
 ### Восстанавливаем список индексов из снапшота:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.5/restore.PNG?raw=true "Optional Title")
+![restore](restore.PNG)
 
 ### Запрос:
 

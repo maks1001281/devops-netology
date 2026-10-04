@@ -10,7 +10,7 @@
 
 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.2/6.PNG?raw=true "Optional Title")
+![6](6.PNG)
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/8.2/7.PNG?raw=true "Optional Title")
+![7](7.PNG)
 
 
 

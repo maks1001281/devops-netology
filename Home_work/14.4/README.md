@@ -61,25 +61,25 @@ spec:
 
 ### Проверяем работоспособность nginx
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/1.19_curl.PNG?raw=true "Optional Title")
+![1.19_curl](1.19_curl.PNG)
 
 ### Обновляем версию до 1.20, смотрим что происходит обновление 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/1.20.PNG?raw=true "Optional Title")
+![1.20](1.20.PNG)
 
 ### Проверяем curl что все работает
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/1.20_curl.PNG?raw=true "Optional Title")
+![1.20_curl](1.20_curl.PNG)
 
 ### Обновляем nginx до версии 1.28, видим что поды не поднялись а прошлая версия продолжает работать
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/1.28.PNG?raw=true "Optional Title")
+![1.28](1.28.PNG)
 
 
 ### Смотрим историю версий и откатываемся на предыдущую 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/rollout.PNG?raw=true "Optional Title")
+![rollout](rollout.PNG)
 
 ### Проверяем доступность старой версии приложения
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/14.4/1.20_rollout.PNG?raw=true "Optional Title")
+![1.20_rollout](1.20_rollout.PNG)

@@ -28,11 +28,11 @@
 
 ### Поставил Terraform с оф репы:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/7.1/terraform.PNG?raw=true "Optional Title")
+![terraform](terraform.PNG)
 
 ## Задание 3
 
 ### Развернул образ Centos7 в докера и скачал старую версию terraform:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/7.1/terraformold.PNG?raw=true "Optional Title") 
+![terraformold](terraformold.PNG) 
 

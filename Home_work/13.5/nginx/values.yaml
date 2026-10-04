@@ -3,3 +3,11 @@ container:
   name: nginx-helm-10
 name: nginx1-19-10
 namespace: app2
+replicaCount: 1
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi

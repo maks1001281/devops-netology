@@ -1,9 +1,12 @@
 {
+  "variables": {
+    "folder_id": "{{env `YC_FOLDER_ID`}}"
+  },
   "builders": [
     {
       "type":      "yandex",
       "token":     "",
-      "folder_id": "b1gf9lcio0r7vnajphej",
+      "folder_id": "{{user `folder_id`}}",
       "zone":      "ru-central1-a",
 
       "image_name":        "centos-7{{isotime | clean_resource_name}}",

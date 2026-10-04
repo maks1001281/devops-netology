@@ -71,15 +71,15 @@ spec:
 
 #### 1.3 Демонстрация, что multitool может читать файл, в который busybox пишет каждые пять секунд в общей директории
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.2/output.PNG?raw=true "Optional Title")
+![output](output.PNG)
 
 #### 1.4 Удаляем deployment и PVC, после удаление PVC PV потерял связь с PVC и видно ошибку PV, но данный файл останется на ноде и не удалится
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.2/delete_pvc.PNG?raw=true "Optional Title")
+![delete_pvc](delete_pvc.PNG)
 
 #### 1.5 Удаляем PV, как видим после удаления PV файл остался на ноде и читается
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.2/devete_pv.PNG?raw=true "Optional Title")
+![devete_pv](devete_pv.PNG)
 
 
 
@@ -151,4 +151,4 @@ spec:
 #### 2.3 Проверяем возможность чтения и записи внутри пода 
 
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/13.2/pvc_nfs.PNG?raw=true "Optional Title")
+![pvc_nfs](pvc_nfs.PNG)

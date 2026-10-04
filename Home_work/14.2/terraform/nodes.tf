@@ -1,6 +1,7 @@
-resource "yandex_compute_instance" "node4" {
-  hostname        = "node4"
-  name        = "node4"
+resource "yandex_compute_instance" "node" {
+  count       = var.node_count
+  hostname    = "node${count.index + 1}"
+  name        = "node${count.index + 1}"
   platform_id = "standard-v1"
   zone        = "ru-central1-a"
 
@@ -9,22 +10,20 @@ resource "yandex_compute_instance" "node4" {
     memory = 4
   }
 
-scheduling_policy {
+  scheduling_policy {
     preemptible = true
- }
+  }
 
   boot_disk {
     initialize_params {
-      image_id = "fd8qes7jgsjvuudp80td"
+      image_id = var.image_id
       size     = "30"
       type     = "network-nvme"
-
-
     }
   }
 
   network_interface {
-    subnet_id = "e9bq93otsvu9tqle1mt1"
+    subnet_id = var.subnet_id
     nat       = true
   }
 
@@ -33,4 +32,3 @@ scheduling_policy {
     ssh-keys = "centos:${file("~/.ssh/id_rsa.pub")}"
   }
 }
-

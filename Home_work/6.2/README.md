@@ -1,24 +1,24 @@
 ## Задача 1
 ### Docker-compose файл:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/compose.PNG?raw=true "Optional Title")
+![compose](compose.PNG)
 
 ## Задача 2
 ### Итоговый список БД:
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/base.PNG?raw=true "Optional Title")
+![base](base.PNG)
 
 ### Описание таблицы clients:
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/clients.PNG?raw=true "Optional Title")
+![clients](clients.PNG)
 
 ### Описание таблицы orders:
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/orders.PNG?raw=true "Optional Title")
+![orders](orders.PNG)
 
 ### SQL запрос для выдачи списка пользователей:
 
 SELECT * FROM information_schema.table_privileges where grantee = 'test-simple-user'
 
 ### Вывод списока пользователей с правами на test_db:
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/users.PNG?raw=true "Optional Title")
+![users](users.PNG)
 
 ## Задача 3
 ### Запросы для вычисления количества записей для каждой таблицы:
@@ -28,7 +28,7 @@ SELECT count(*) FROM orders
 
 ### Результат выполнения:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/select.PNG?raw=true "Optional Title")
+![select](select.PNG)
 
 ## Задача 4
 ### Связываем записи в таблицах:
@@ -43,7 +43,7 @@ select * from clients where Заказ != 0
 
 ### Результат:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/update.PNG?raw=true "Optional Title")
+![update](update.PNG)
 
 ## Задача 5
 ### Получаем полную информацию по выполнению запроса:
@@ -59,7 +59,7 @@ explain analyse  select * from clients where Заказ != 0
 
 ### Результат выполнения:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/analyse.PNG?raw=true "Optional Title")
+![analyse](analyse.PNG)
 
 ## Задача 6
 
@@ -71,4 +71,4 @@ psql -U user -W test_db < /media/postgresql/backup/base
 
 ### Проверяем backup:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.2/restore.PNG?raw=true "Optional Title")
+![restore](restore.PNG)

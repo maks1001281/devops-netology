@@ -1,7 +1,7 @@
 
 locals {
-  cloud_id    = "b1gvqruc4vs0jmq1sqh2"
-  folder_id   = "b1gf9lcio0r7vnajphej"
+  cloud_id    = var.cloud_id
+  folder_id   = var.folder_id
   k8s_version = "1.26"
   sa_name     = "root"
 }
@@ -47,7 +47,7 @@ resource "yandex_iam_service_account" "kubernetes" {
 
 resource "yandex_resourcemanager_folder_iam_member" "kubernetes" {
   # Сервисному аккаунту назначается роль "k8s.clusters.agent".
-  folder_id = "b1gf9lcio0r7vnajphej"
+  folder_id = var.folder_id
   role      = "editor"
   member    = "serviceAccount:${yandex_iam_service_account.kubernetes.id}"
 }
@@ -68,13 +68,13 @@ resource "yandex_vpc_security_group" "k8s-main-sg" {
   ingress {
     protocol       = "TCP"
     description    = "Правило разрешает подключение к API Kubernetes через порт 6443 из указанной сети."
-    v4_cidr_blocks = ["37.192.231.178/32"]
+    v4_cidr_blocks = var.k8s_api_allowed_cidrs
     port           = 6443
   }
   ingress {
     protocol       = "TCP"
     description    = "Правило разрешает подключение к API Kubernetes через порт 443 из указанной сети."
-    v4_cidr_blocks = ["37.192.231.178/32"]
+    v4_cidr_blocks = var.k8s_api_allowed_cidrs
     port           = 443
   }
   ingress {

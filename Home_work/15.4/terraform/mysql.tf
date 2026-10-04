@@ -46,7 +46,7 @@ resource "yandex_mdb_mysql_database" "netology_db" {
 resource "yandex_mdb_mysql_user" "netology" {
   cluster_id = yandex_mdb_mysql_cluster.mysql.id
   name       = "netology"
-  password   = "netology"
+  password   = var.mysql_password
   permission {
     database_name = yandex_mdb_mysql_database.netology_db.name
     roles         = ["ALL"]

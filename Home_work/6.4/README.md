@@ -1,7 +1,7 @@
 ## Задача 1
 ### Docker compose file:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/docker.PNG?raw=true "Optional Title")
+![docker](docker.PNG)
 
 ### Управляющие команды SQL:
 
@@ -18,7 +18,7 @@
 
 ### Результат:
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/pgstats.PNG?raw=true "Optional Title")
+![pgstats](pgstats.PNG)
 
 ## Задача 3
 ### Запрос SQL:
@@ -44,11 +44,11 @@
 
 ### orders 1
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders_1.PNG?raw=true "Optional Title")
+![orders_1](orders_1.PNG)
 
 ### orders 2
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/6.4/orders_2.PNG?raw=true "Optional Title")
+![orders_2](orders_2.PNG)
 
 ### Можно ли было изначально исключить "ручное" разбиение при проектировании таблицы orders:
 

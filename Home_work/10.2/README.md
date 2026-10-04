@@ -50,14 +50,14 @@
 
 ### Задание 7
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick.PNG?raw=true "Optional Title")
+![tick](tick.PNG)
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/tick2.PNG?raw=true "Optional Title")
+![tick2](tick2.PNG)
 
 ### Задание 8
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/disk.PNG?raw=true "Optional Title")
+![disk](disk.PNG)
 
 ### Задание 9
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/10.2/docker.PNG?raw=true "Optional Title")
+![docker](docker.PNG)

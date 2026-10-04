@@ -2,15 +2,15 @@
 
 ### Pipeline
  
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/9.4/pipeline.PNG?raw=true "Optional Title")
+![pipeline](pipeline.PNG)
 
 ### Multibranch Pipeline
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/9.4/mpipeline.PNG?raw=true "Optional Title")
+![mpipeline](mpipeline.PNG)
 
 ### Scripted Pipeline
 
-![Alt text](https://github.com/maks1001281/devops-netology/blob/main/Home_work/9.4/build.PNG?raw=true "Optional Title")
+![build](build.PNG)
 
 ### Ссылки на Pipeline
 

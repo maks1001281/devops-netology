@@ -1,0 +1,6 @@
+# Скопируйте в terraform.tfvars и подставьте свои значения.
+# Сам terraform.tfvars в git не попадает (см. .gitignore).
+cloud_id              = "<id облака>"
+folder_id             = "<id каталога>"
+k8s_api_allowed_cidrs = ["203.0.113.10/32"]
+mysql_password        = "<пароль>"
